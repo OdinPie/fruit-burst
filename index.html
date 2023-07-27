@@ -136,7 +136,7 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-center">
+      <div class="flex justify-center hidden md:flex md:flex">
         <div class="flex bg-white drop-shadow justify-center w-[900px] py-[50px] -mt-[100px] rounded-md">
             <img src="images/fruit1.png" alt="">
             <img src="images/fruit2.png" alt="">
@@ -149,13 +149,56 @@
    </header>
    <main class="md:container md: mx-auto">
     <div class="deal-header flex justify-between mt-[150px]">
-        <div class="header-content text-left">
+        <div class="header-content hidden lg:flex md:flex flex-col">
             <h2 class="mb-5 sm:text-3xl md: text-2xl lg:text-3xl font-extrabold">
                 Deal of the day!
             </h2>
             <p class="mb-5 text-text-secondary">Get the most fresh fruits in town before the time runs out.<br>Our fruits are free of any preservatives and chemicals.</p>
         </div>
-        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+        
+        <div class="hidden md:grid grid-flow-col gap-5 text-center auto-cols-max justify-center">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl font-extrabold">
+                <span style="--value:15;"></span>
+              </span>
+              days
+            </div> 
+            <img class="relative top-3" src="images/colon.png" alt="">
+
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl font-extrabold">
+                <span style="--value:10;"></span>
+              </span>
+              hours
+            </div> 
+            <img class="relative top-3" src="images/colon.png" alt="">
+
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl font-extrabold">
+                <span style="--value:24;"></span>
+              </span>
+              min
+            </div> 
+            <img class="relative top-3" src="images/colon.png" alt="">
+
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl font-extrabold">
+                <span style="--value:41;"></span>
+              </span>
+              sec
+            </div>
+          </div>
+    </div>
+    <!-- responsive for small -->
+    <div class="deal-header sm:flex-col mid:hidden justify-between mt-[150px]">
+        
+        <div class="header-content sm:text-center md:hidden">
+            <h2 class="mb-5 sm:text-3xl md: text-2xl lg:text-3xl font-extrabold">
+                Deal of the day!
+            </h2>
+            <p class="mb-5 text-text-secondary">Get the most fresh fruits in town before the time runs out.<br>Our fruits are free of any preservatives and chemicals.</p>
+        </div>
+        <div class="md:hidden sm:grid grid-flow-col gap-5 text-center auto-cols-max justify-center">
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl font-extrabold">
                 <span style="--value:15;"></span>
